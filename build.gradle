@@ -22,6 +22,10 @@ apply plugin: 'io.spring.dependency-management'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = 1.8
 
+springBoot {
+    mainClassName = 'br.com.am.study.kotlin.KotlinApplication'
+}
+
 compileKotlin {
     kotlinOptions.jvmTarget = "1.8"
 }
@@ -32,7 +36,6 @@ compileTestKotlin {
 repositories {
     mavenCentral()
 }
-
 
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
