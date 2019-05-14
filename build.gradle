@@ -15,7 +15,7 @@ def dockerRepositoryName = "augustomarinho/study"
 def dockerImageName = jar.archiveName.replaceAll('.jar', '')
 def dockerFilePath = rootProject.file('src/main/docker/Dockerfile').getAbsolutePath()
 
-        println("########################################")
+println("########################################")
 println("#  DEFINED VARIABLES:")
 println("#  projectName: ${project.name}")
 println("#")
@@ -48,7 +48,7 @@ buildscript {
 }
 
 springBoot {
-    mainClassName = 'br.com.am.study.kotlin.KotlinApplication'
+    mainClassName = "br.com.am.study.kotlin.KotlinApplicationKt"
 }
 
 docker {
